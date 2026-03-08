@@ -1,1 +1,3 @@
-# sinta_full_cli_v3
+# sinta-full-cli-v3
+
+test
