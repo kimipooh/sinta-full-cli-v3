@@ -1,0 +1,1 @@
+# sinta_full_cli_v3
