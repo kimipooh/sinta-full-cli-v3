@@ -1,6 +1,10 @@
 # SINTA 3 Journal Metadata CLI
 
-[English README](README.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](#installation)
+[![Japanese](https://img.shields.io/badge/README-日本語-green.svg)](README_ja.md)
+<!-- Replace YOUR_DOI after creating the first GitHub Release and Zenodo DOI -->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18908540.svg)](https://doi.org/10.5281/zenodo.18908540)
 
 インドネシアの学術データベース **SINTA 3** から、ジャーナル情報を取得して JSON または CSV として出力するコマンドラインツールです。
 
@@ -242,15 +246,21 @@ python sinta-full-cli-v3.py -q "AI" | jq 'sort_by(.sinta_score_overall | tonumbe
 
 このツールは、東南アジア地域の学術情報やジャーナルデータの収集・整理を支援する研究実務ツールとして開発したものです。特に、現行 SINTA 3 に対応した実用的ツールが限られている状況を踏まえ、再利用しやすい CLI として整備しています。
 
+
+## DOI
+
+This repository is archived on Zenodo.
+
+https://doi.org/10.5281/zenodo.18908540
+
+## Citation
+
 このソフトウェアを研究で使用する場合は、リポジトリまたはDOIを引用していただけると幸いです。
 
-### 推奨引用形式
+Kitani, K. (2026).  
+SINTA Data Retrieval Tool (Version 1.0).  
+Zenodo. https://doi.org/10.5281/zenodo.18908540
 
-```text
-Kitani, K. (2026). SINTA 3 Journal Metadata CLI [Computer software]. GitHub. https://github.com/kimipooh/sinta-full-cli-v3
-```
-
----
 
 ## リポジトリ内ファイル
 

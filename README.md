@@ -4,8 +4,7 @@
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](#installation)
 [![Japanese](https://img.shields.io/badge/README-日本語-green.svg)](README_ja.md)
 <!-- Replace YOUR_DOI after creating the first GitHub Release and Zenodo DOI -->
-[![DOI](https://zenodo.org/badge/DOI/YOUR_DOI.svg)](https://doi.org/YOUR_DOI)
-
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18908540.svg)](https://doi.org/10.5281/zenodo.18908540)
 A command-line tool for retrieving journal metadata from the Indonesian academic database **SINTA 3**.
 
 Research tool for collecting Indonesian scholarly journal metadata from SINTA 3.
@@ -264,13 +263,19 @@ This tool was originally developed as a practical research utility for working w
 
 If you use this software in research, a citation to the repository or DOI is appreciated.
 
-### Suggested citation
+## DOI
 
-```text
-Kitani, K. (2026). SINTA 3 Journal Metadata CLI [Computer software]. GitHub. https://github.com/kimipooh/sinta-full-cli-v3
-```
+This repository is archived on Zenodo.
 
-After Zenodo assigns a DOI, replace the citation with the DOI-based version.
+https://doi.org/10.5281/zenodo.18908540
+
+## Citation
+
+If you use this software in your research, please cite:
+
+Kitani, K. (2026).  
+SINTA Data Retrieval Tool (Version 1.0).  
+Zenodo. https://doi.org/10.5281/zenodo.18908540
 
 ---
 
