@@ -3,7 +3,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](#installation)
 [![Japanese](https://img.shields.io/badge/README-日本語-green.svg)](README_ja.md)
-<!-- Replace YOUR_DOI after creating the first GitHub Release and Zenodo DOI -->
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18908540.svg)](https://doi.org/10.5281/zenodo.18908540)
 
 インドネシアの学術データベース **SINTA 3** から、ジャーナル情報を取得して JSON または CSV として出力するコマンドラインツールです。
