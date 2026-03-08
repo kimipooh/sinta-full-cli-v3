@@ -2,15 +2,23 @@ cff-version: 1.2.0
 message: "If you use this software, please cite it using the metadata below."
 title: "SINTA 3 Journal Metadata CLI"
 type: software
+
 authors:
   - family-names: "Kitani"
     given-names: "Kimiya"
     affiliation: "Center for Southeast Asian Studies, Kyoto University"
+    orcid: "https://orcid.org/0000-0003-0422-328X"
+    
+doi: "10.5281/zenodo.18908540"
+
 repository-code: "https://github.com/kimipooh/sinta-full-cli-v3"
 url: "https://github.com/kimipooh/sinta-full-cli-v3"
+
 license: "MIT"
+
 version: "v1.0.0"
 date-released: "2026-03-08"
+
 abstract: >
   A command-line tool for retrieving journal metadata from the Indonesian
   academic database SINTA 3, with JSON/CSV output and support for title/all
