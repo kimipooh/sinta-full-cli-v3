@@ -1,8 +1,24 @@
 # Changelog
 
-All notable changes to **SINTA 3 Journal Metadata CLI** will be documented in this file.
+All notable changes to **SINTA Journal Metadata CLI** will be documented in this file.
 
 The format is based on *Keep a Changelog* and the project follows **Semantic Versioning**.
+
+---
+
+## [1.0.1] - 2026-03-09
+
+### Changed
+- Clarified documentation to avoid confusion between **SINTA journal ranking (S1–S6)** and the SINTA platform itself
+- Updated README title from **"SINTA 3 Journal Metadata CLI"** to **"SINTA Journal Metadata CLI"**
+- Minor wording updates in README and README_ja
+
+### Fixed
+- Corrected CLI command typo (`sinta-full-cli_v3.py` → `sinta-full-cli-v3.py`)
+- Minor comment improvements in the Python source code
+
+### Notes
+No changes to the CLI functionality or metadata extraction logic.
 
 ---
 
@@ -10,7 +26,7 @@ The format is based on *Keep a Changelog* and the project follows **Semantic Ver
 
 ### Added
 - Initial public release of **sinta-full-cli-v3.py**
-- Command line interface for retrieving journal metadata from **SINTA 3**
+- Command line interface for retrieving journal metadata from **SINTA**
 - Support for the current domain:
   - https://sinta.kemdiktisaintek.go.id
 
@@ -53,5 +69,3 @@ The format is based on *Keep a Changelog* and the project follows **Semantic Ver
 - requirements.txt
 - CITATION.cff for GitHub citation support
 - Zenodo DOI integration prepared
-
----

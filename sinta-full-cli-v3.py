@@ -2,13 +2,13 @@
 # -*- coding: utf-8 -*-
 
 """
-SINTA 3 Journal Metadata CLI
+SINTA Journal Metadata CLI
 
 Command-line tool for retrieving journal metadata from the Indonesian
 academic database SINTA (Science and Technology Index).
 
 This tool extracts journal metadata including SINTA rank, ISSN,
-citation counts, and H-index values from the current SINTA 3 journal
+citation counts, and H-index values from the current SINTA journal
 search interface.
 
 Author:
@@ -31,7 +31,7 @@ or Zenodo DOI is appreciated.
 __author__ = "Kimiya Kitani"
 __copyright__ = "Copyright (c) 2026 Kimiya Kitani"
 __license__ = "MIT"
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __status__ = "Research Tool"
 
 import argparse
@@ -48,7 +48,7 @@ from bs4 import BeautifulSoup
 
 def search_sinta_journal_max(keyword, search_type=1, affil_filter=None):
     """
-    Max Metadata Scraper for SINTA 3 (2026).
+    Max Metadata Scraper for the current SINTA journal search interface (2026).
     Extracts ISSNs, scores, h-index, and citations.
     """
     base_url = "https://sinta.kemdiktisaintek.go.id/journals"
@@ -128,7 +128,7 @@ def search_sinta_journal_max(keyword, search_type=1, affil_filter=None):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="SINTA 3 Max Metadata CLI")
+    parser = argparse.ArgumentParser(description="SINTA Journal Metadata CLI")
     parser.add_argument("-q", "--query", required=True, help="Search keyword")
     parser.add_argument("-m", "--mode", choices=["title", "all"], default="title")
     parser.add_argument("-a", "--affil", help="Affiliation filter")

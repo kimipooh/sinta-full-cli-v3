@@ -1,32 +1,50 @@
-# SINTA 3 Journal Metadata CLI
+# SINTA Journal Metadata CLI
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](#installation)
 [![Japanese](https://img.shields.io/badge/README-日本語-green.svg)](README_ja.md)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18908540.svg)](https://doi.org/10.5281/zenodo.18908540)
 
-インドネシアの学術データベース **SINTA 3** から、ジャーナル情報を取得して JSON または CSV として出力するコマンドラインツールです。
+インドネシアの学術データベース **SINTA** から、ジャーナル情報を取得して JSON または CSV として出力するコマンドラインツールです。
 
 研究用途でのインドネシア学術ジャーナルメタデータ収集を意識して整備したツールです。
 
-従来のツールの多くは旧ドメイン `sinta.kemdikbud.go.id` を前提としており、現在の **SINTA 3**（`sinta.kemdiktisaintek.go.id`）では動作しない、または不安定な場合があります。本ツールは、現在の SINTA 3 構造を前提にした実用的な研究用CLIとして整備したものです。 
-
 **Japanese** | [English](README.md)
 
+---
+
+## 概要
+
+インドネシアの研究情報データベース **SINTA (Science and Technology Index)** の
+ジャーナル検索ページからメタデータを取得する CLI ツールです。
+
+本ツールは、現在の SINTA ドメイン
+
+https://sinta.kemdiktisaintek.go.id
+
+を前提に設計されています。
+
+既存のスクリプトの多くは旧ドメインや旧サイト構造を前提としているため、
+現在の SINTA 環境では動作しない、または不安定な場合があります。
+
+本ツールは、現在の SINTA ジャーナル検索インターフェースから
+研究用途で利用可能な形でメタデータを収集することを目的とした
+実用的な CLI ツールです。
+
+なお、SINTA における **SINTA1〜SINTA6** はジャーナルのランク区分であり、
+SINTA システムのバージョンを意味するものではありません。
 
 ---
 
 ## 主な機能
 
-- **SINTA 3** の現行ドメインに対応
+- 現行 SINTA ドメインに対応
 - キーワード検索
 - タイトル限定検索 / 全体検索の切り替え
 - 発行元・所属機関での絞り込み
 - JSON / CSV 出力
 - 標準出力ベースでパイプ処理しやすい設計
 - ランダムディレイと User-Agent による負荷配慮
-
-現在のスクリプトでは、検索語、検索モード、所属フィルタ、出力形式を引数で指定できます。 
 
 ---
 

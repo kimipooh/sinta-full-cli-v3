@@ -1,12 +1,13 @@
-# SINTA 3 Journal Metadata CLI
+# SINTA Journal Metadata CLI
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](#installation)
 [![Japanese](https://img.shields.io/badge/README-日本語-green.svg)](README_ja.md)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18908540.svg)](https://doi.org/10.5281/zenodo.18908540)
-A command-line tool for retrieving journal metadata from the Indonesian academic database **SINTA 3**.
 
-Research tool for collecting Indonesian scholarly journal metadata from SINTA 3.
+A command-line tool for retrieving journal metadata from the Indonesian academic database **SINTA**.
+
+Research tool for collecting Indonesian scholarly journal metadata from the SINTA journal search interface.
 
 **English** / [Japanese](README_ja.md)
 
@@ -14,28 +15,34 @@ Research tool for collecting Indonesian scholarly journal metadata from SINTA 3.
 
 ## Overview
 
-This tool queries the SINTA journal search interface and extracts structured metadata such as journal title, SINTA level, ISSN, affiliation, citation counts, and H-index values.
+A command-line tool for retrieving journal metadata from the current SINTA
+(Science and Technology Index) journal search website in Indonesia.
 
-Many older tools and code snippets still rely on the legacy SINTA 2 domain (`sinta.kemdikbud.go.id`). In contrast, this tool is designed for the current **SINTA 3** domain structure:
+This tool is designed for the current SINTA web environment centered on:
 
 `https://sinta.kemdiktisaintek.go.id`
 
-Because the underlying domain and page structure changed, older tools often no longer work reliably. This project aims to provide a practical and reusable research tool for the current SINTA environment. The Japanese draft materials and the current Python implementation provided by the author were used as the basis for this repository structure and documentation. 
+Many existing scripts and examples available online were written for older
+SINTA site structures or outdated domain patterns. As the SINTA platform has
+evolved, some of those tools no longer work reliably.
+
+This CLI tool provides a practical way to collect journal metadata from the
+current SINTA journal search interface in a controlled and reproducible way.
+
+Note: In the SINTA system, "SINTA 1" through "SINTA 6" refer to journal ranking
+categories, not versions of the SINTA platform.
 
 ---
 
 ## Features
 
-- Compatible with **SINTA 3** (`sinta.kemdiktisaintek.go.id`)
+- Compatible with the current SINTA domain (`sinta.kemdiktisaintek.go.id`)
 - Keyword search for journals
 - Search mode selection: title-only or broader search
 - Affiliation filtering
 - JSON / CSV output
 - UNIX pipeline friendly (stdout-first design)
 - Built-in randomized delay and browser-like User-Agent
-
-The current script supports `-q/--query`, `-m/--mode`, `-a/--affil`, and `-f/--format`, and outputs either pretty-printed JSON or CSV to standard output. 
-
 ---
 
 ## Extracted Metadata
@@ -213,7 +220,7 @@ python sinta-full-cli-v3.py -q "AI" | jq 'length'
 ### Show only S1 journals
 
 ```bash
-python sinta-full-cli_v3.py -q "AI" | jq '.[] | select(.sinta_level == "S1")'
+python sinta-full-cli-v3.py -q "AI" | jq '.[] | select(.sinta_level == "S1")'
 ```
 
 ### List journal names only
