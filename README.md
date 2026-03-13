@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](#installation)
 [![Japanese](https://img.shields.io/badge/README-日本語-green.svg)](README_ja.md)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18922193.svg)](https://doi.org/10.5281/zenodo.18922193)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18994689.svg)](https://doi.org/10.5281/zenodo.18994689)
 
 A command-line tool for retrieving journal metadata from the Indonesian academic database **SINTA**.
 
@@ -285,7 +285,7 @@ If you use this software in research, a citation to the repository or DOI is app
 
 This repository is archived on Zenodo.
 
-https://doi.org/10.5281/zenodo.18922193
+https://doi.org/10.5281/zenodo.18994689
 
 ## Citation
 
@@ -293,7 +293,7 @@ If you use this software in your research, please cite:
 
 Kitani, K. (2026).  
 SINTA Data Retrieval Tool (Version 1.1.0).  
-Zenodo. https://doi.org/10.5281/zenodo.18922193
+Zenodo. https://doi.org/10.5281/zenodo.18994689
 
 ---
 

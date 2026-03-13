@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](#installation)
 [![Japanese](https://img.shields.io/badge/README-日本語-green.svg)](README_ja.md)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18922193.svg)](https://doi.org/10.5281/zenodo.18922193)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18994689.svg)](https://doi.org/10.5281/zenodo.18994689)
 
 インドネシアの学術データベース **SINTA** から、ジャーナル情報を取得して JSON または CSV として出力するコマンドラインツールです。
 
@@ -278,7 +278,7 @@ python sinta-full-cli-v3.py -q "AI" | jq 'sort_by(.sinta_score_overall | tonumbe
 
 This repository is archived on Zenodo.
 
-https://doi.org/10.5281/zenodo.18922193
+https://doi.org/10.5281/zenodo.18994689
 
 ## Citation
 
@@ -286,7 +286,7 @@ https://doi.org/10.5281/zenodo.18922193
 
 Kitani, K. (2026).  
 SINTA Data Retrieval Tool (Version 1.1.0).  
-Zenodo. https://doi.org/10.5281/zenodo.18922193
+Zenodo. https://doi.org/10.5281/zenodo.18994689
 
 
 ## リポジトリ内ファイル
