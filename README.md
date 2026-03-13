@@ -63,6 +63,11 @@ The script extracts the following fields from search results:
 
 These fields are visible in the current implementation where each journal result is normalized into a Python dictionary before output. 
 
+In version 1.1.0 the tool introduces two fetch modes:
+
+- `basic` : returns only fields available directly from search results
+- `detail` : retrieves additional metadata from each journal profile page
+
 ---
 
 ## Architecture
@@ -128,6 +133,12 @@ The current implementation imports `requests`, `beautifulsoup4`, `csv`, `json`, 
 python sinta-full-cli-v3.py
 ```
 
+### Get detailed information (detail mode)
+
+```bash
+python sinta-full-cli-v3.py -q "AI" --fetch-mode detail
+```
+
 ### Basic search
 
 ```bash
@@ -177,6 +188,7 @@ The examples above follow the same behavior described in the Japanese draft guid
 | `-m` | `--mode` | Search mode: `title` or `all` |
 | `-a` | `--affil` | Filter by affiliation / institution |
 | `-f` | `--format` | Output format: `json` or `csv` |
+|  | `--fetch-mode` | `basic` or `detail` |
 
 These options match the current `argparse` configuration in the script. 
 
@@ -280,7 +292,7 @@ https://doi.org/10.5281/zenodo.18922193
 If you use this software in your research, please cite:
 
 Kitani, K. (2026).  
-SINTA Data Retrieval Tool (Version 1.0).  
+SINTA Data Retrieval Tool (Version 1.1.0).  
 Zenodo. https://doi.org/10.5281/zenodo.18922193
 
 ---
@@ -306,3 +318,10 @@ Center for Southeast Asian Studies, Kyoto University
 
 MIT License  
 Copyright (c) 2026 Kimiya Kitani
+
+
+## New in 1.1.0
+
+- Added `--fetch-mode basic|detail`
+- `basic` preserves the original 1.0.1 core fields
+- `detail` enriches results using journal profile pages
